@@ -202,24 +202,18 @@ do {
 
 //Задание 22
 // Запросить у пользователя числа, пока сумма введенных чисел не станет больше 100
-// let summa = 0;
-// while (summa <= 100) {
-//   let number = parseInt(prompt("Введите число:"));
-//   if (isNaN(number)) {
-//     alert("Вы ввели не число. Попробуйте еще раз.");
-//     continue;
-//   }
-//   summa += number;
-// }
+let summa = 0;
 
-// alert("Сумма чисел превысила 100.");
-// let сумма = 0;
-// while (сумма <= 100) {
-//   let число = parseInt(prompt("Введите число:"));
-//   сумма += число;
-// }
+while (summa <= 100) {
+  let number = parseInt(prompt("Введите число:"));
+  if (isNaN(number)) {
+    alert("Вы ввели не число. Попробуйте еще раз.");
+    continue;
+  }
+  summa += number;
+}
 
-// console.log("Сумма введенных чисел превысила 100.");
+console.log("Сумма введенных чисел превысила 100.");
 
 //Задание 23
 // Напишите функцию, которая изменит фоновый цвет всех элементов <h4> на странице на синий цвет
@@ -240,7 +234,7 @@ let alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэю
 let randomString = "";
 
 function generateRandomString() {
-  let length = Math.floor(Math.random() * 6) + 1; // Случайная длина строки от 1 до 6
+  let length = Math.floor(Math.random() * 6) + 1;
   for (let i = 0; i < length; i++) {
     let randomIndex = Math.floor(Math.random() * alphabet.length);
     randomString += alphabet[randomIndex];
